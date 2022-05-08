@@ -1,11 +1,11 @@
-JAR = build/libs/Hipster-1.0-SNAPSHOT.jar
+JAR = build/libs/Connections-1.0-SNAPSHOT.jar
 GRADLE = ./gradlew
 
 clean:
 	$(GRADLE) clean
 
-build/libs/Hipster-1.0-SNAPSHOT.jar: src
+$(JAR): src
 	$(GRADLE) build
 
 package: $(JAR)
-	javapackager -deploy -native dmg -srcfiles $(JAR) -appclass com.herescreen.hipster.Main -name Hipster -outdir deploy -outfile Hipster
+	javapackager -deploy -native dmg -srcfiles $(JAR) -appclass com.herescreen.connections.Connections -name Connections -outdir deploy -outfile Connections

@@ -33,7 +33,8 @@
  */
 package com.herescreen.inx;
 
-import java.beans.*;
+import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeSupport;
 
 public abstract class AbstractModel {
     private PropertyChangeSupport pcs = new PropertyChangeSupport(this);

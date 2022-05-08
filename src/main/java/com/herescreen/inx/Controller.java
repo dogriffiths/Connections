@@ -33,23 +33,16 @@
  */
 package com.herescreen.inx;
 
-import java.awt.Component;
-import java.awt.ItemSelectable;
-import java.awt.TextComponent;
+import javax.swing.*;
+import javax.swing.event.ChangeListener;
+import javax.swing.event.ListDataListener;
+import java.awt.*;
 import java.awt.event.ActionListener;
 import java.awt.event.FocusListener;
 import java.awt.event.ItemListener;
 import java.beans.EventHandler;
 import java.beans.PropertyChangeListener;
 import java.lang.reflect.Method;
-import javax.swing.ComboBoxModel;
-import javax.swing.JCheckBox;
-import javax.swing.JComboBox;
-import javax.swing.JSpinner;
-import javax.swing.JTextArea;
-import javax.swing.JTextField;
-import javax.swing.event.ChangeListener;
-import javax.swing.event.ListDataListener;
 
 public class Controller {
     private AbstractModel model;

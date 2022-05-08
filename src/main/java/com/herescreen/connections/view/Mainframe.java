@@ -427,7 +427,7 @@ public final class Mainframe extends JFrame implements PropertyChangeListener,
     
     public void homePage() {
         try {
-            BrowserLauncher.openURL("https://github.com/dogriffths/Connections");
+            BrowserLauncher.openURL("https://github.com/dogriffiths/Connections");
         } catch(MalformedURLException mfue) {
             mfue.printStackTrace();
         } catch(IOException ioe) {
